@@ -6,13 +6,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
     <title>PORTOFOLIO | Bilal Assidawi</title>
 </head>
 <body>
     <header>
         <nav>
-            <h2>Bil<span class="il">al.</span></h2>
-            <ul>
+            <h2>assidawi_b</h2>
+
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="navMenu">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Skills">Skills</a></li>
@@ -21,73 +32,91 @@
             </ul>
         </nav>
     </header>
+    
+    <section class="pembukaan">
+        <div class="awalan">
+            <h3 class="well">welcome to</h3>
+            <h1 class="port">
+                MY <span>PORT<span class="of">OF</span>OLIO</span>
+            </h1>
+            <div class="garis"></div>
+        </div>
+    </section>
+
 
     <main id="Home">
-        <div class="card">
-            <h2>Hello, my name is</h2>
-            <h1>Bilal Assidawi</h1>
-            <h2>and i'am a <span class="st">student</span></h2>
+        <div class="card-a">
+            <h2 data-aos="fade-left" data-aos-duration="500" data-aos-delay="300"><span class="st">Assalamu'alaikum</span>, It's me</h2>
+            <h1 id="typing"></h1>
+            <h2 data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">and I'am a <span class="st">student</span> | web enthusiast</h2>
             <br>
-            <div class="contact">
-                <a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            <div class="contact" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+                <a href="https://wa.me/628997747566?"target="_blank"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/bilal-as-sidawi-06ab93392/"><i class="fa fa-linkedin"></i></a>
                 <a href="https://instagram.com/bilal.asdw"><i class="fa fa-instagram"></i></a>
                 <a href="https://github.com/assidawib-lab"><i class="fa fa-github"></i></a>
+                <a href="https://www.youtube.com/@bilalassidawi"><i class="fa fa-youtube"></i></a>
             </div>
             <br>
-            <a href="#Contact"><button type="button" class="biru">Contact Me!</button></a>
+            <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
+                <a href="#Contact"><button type="button" class="bw">Contact Me!</button></a>
+            </div>
         </div>
 
-        <div class="foto">
-            <img src="/images/fotodiri.jpg" alt="">
+        <div class="foto" data-aos="flip-left" data-aos-duration="900" data-aos-delay="200">
+            <img src="/images/fotodiri3.jpeg" alt="">
         </div>
     </main>
 
     <main id="About">
-        <div class="photo">
-            <img src="images/jomok.jpg" alt="">
+        <div class="photo" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">
+            <img src="/images/fotodiri2.jpeg" alt="">
         </div>
         <div class="abt">
-            <h1>About Me</h1>
+            <h1 data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">About <span class="st">Me</span></h1>
 
-            <h3>Student <span class="SL">& Learner</span></h3>
+            <h3 data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">Student <span class="SL" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">& Learner</span></h3>
             <br>
-            <p>My name is Bilal Assidawi, I am Indonesian <br>
-            people, i was born in Bekasi in 06 Februari 2010, <br>
-            i have learned Html, Css, i using Visual Studio Code as my<br>
-            Source code.</p>
+            <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+                My name is Bilal Assidawi.<br>
+                I am an Indonesian student who believes that every line of code carries intention. <br><br>
+                Born in Bekasi on February 6, 2010, I explore the world of IT, design, and Islamic studies<br>
+                by creating simple interfaces with care, using HTML, CSS, and Visual Studio Code as my tools.
+            </p>
             <br><br>
-            <a href="#Contact"><button type="button" class="birubor">Let's Talk</button></a>
+            <div data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">
+            <a href="#Contact"><button type="button" class="bw">Let's Talk</button></a>
+            </div>
         </div>
     </main>
 
     <main id="Skills">
         <div>
-            <h1 class="ms">My Skills</h1>
+            <h1 class="ms" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300"><span class="st">My</span> Skills</h1>
             <br><br>
             <div class="skl">
                 <div class="html">
-                    <div class="hp">
+                    <div class="hp" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
                         <img src="images/html.png" width="70px" height="60px" alt="logo html">
                     </div>
-                    <h3>Html</h3>
+                    <h3 data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">Html</h3>
                     <br>
-                    <p>I have been learning HTML for about four months and have already built a strong foundation in creating well-structured and responsive web pages.</p>
+                    <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">I have been learning HTML for about four months and have already built a strong foundation in creating well-structured and responsive web pages.</p>
                     <br>
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="600">
                         <a href="https://id.wikipedia.org/wiki/HTML"><button type="button" class="bw">Read More!</button></a>
                     </div>
                     <br>
                 </div>
                 <div class="css">
-                    <div class="cp">
+                    <div class="cp" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
                         <img src="images/css.png" width="50px" height="50px" alt="logo css">
                     </div>
-                    <h3>Css</h3>
+                    <h3 data-aos="fade-left" data-aos-duration="500" data-aos-delay="400">Css</h3>
                     <br>
-                    <p>I have been learning CSS for about four months and have developed a solid understanding of styling and layout.</p>
+                    <p data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">I have been learning CSS for about four months and have developed a solid understanding of styling and layout.</p>
                     <br>
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="600">
                         <a href="https://id.wikipedia.org/wiki/CSS"><button type="button" class="bw">Read more!</button></a>
                     </div>
                     <br>
@@ -96,27 +125,153 @@
         </div>
     </main>
 
-    <main id="Works">
-        <h1>My Works</h1>
+    <main id="Works" class="works">
+        <div class="kontener">
+            <h1><span class="st">My</span> Works</h1>
+
+            <div class="c-card">
+                <div class="card-w" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
+                    <div class="content">
+                        <h3>Bahasa Arab</h3>
+                        <br>
+                        <p>Ini adalah karya karya Bahasa Arab saya</p>
+                        <br>
+                        <a href="barab.html"><button type="button" class="bw">See</button></a>
+                    </div>
+                </div>
+                <div class="card-w" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+                    <div class="content">
+                        <h3>Project IT</h3>
+                        <br>
+                        <p>Ini adalah kumpulan karya karya IT saya</p>
+                        <br>
+                        <a href="project-it.html"><button type="button" class="bw">See</button></a>
+                    </div>
+                </div>
+                <div class="card-w" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+                    <div class="content">
+                        <h3>Tahfidz</h3>
+                        <br>
+                        <p>Ini adalah bacaan-bacaan Al-Qur'an saya</p>
+                        <br>
+                        <a href="tahfidz.html"><button type="button" class="bw">See</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <a href="form.html"><button type="button" class="ken">Let's get to know each other</button></a>
-    
     <main id="Contact">
         <div class="con">
-            <h2>Bilal Assidawi</h2>
+            <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Bilal Assidawi</h2>
             <br>
-            <p>If you want to contact me further or just want to chat,<br>
-            you can contact me here.</p>
+            <p data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">Some connections start quietly, but grow into something meaningful.<br>
+                Feel free to reach out, and let’s create with intention.</p>
         </div>
     </main>
     <br>
-    <div class="contac">
-            <a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+    <div class="contac" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+            <a href="https://wa.me/628997747566?"target="_blank"><i class="fa fa-whatsapp"></i></a>
             <a href="https://instagram.com/bilal.asdw"><i class="fa fa-instagram"></i></a>
     </div>
     <br><br><br>
-    <footer>© 2025 Bilal Assidawi. All rights reserved.</footer>
+    
+    <footer class="cool-footer">
+        <div class="footer-glow"></div>
+        <div class="footer-inner">
+            <div class="footer-card">
+                <p class="badge">Student Developer</p>
+                <h2>Bilal Assidawi</h2>
+                <p class="desc">
+                    Pelajar yang lagi serius belajar Teknologi Informasi dan suka bangun proyek kecil untuk latihan.
+                </p>
+                <p class="learning">
+                    A high school student at IT HSI BS, studying IT to chase dreams as high as the sky.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <div>
+                    <h3>Menu</h3>
+                    <a href="#Home">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#Skills">Skills</a>
+                    <a href="#Works">Works</a>
+                    <a href="#Contact">Contact</a>
+                </div>
+                <div>
+                    <h3>Kontak</h3>
+                    <p>Email: assidawib@gmail.com</p>
+                    <p>Instagram: @bilal.asdw</p>
+                </div>
+                <div>
+                    <h3>Sosial</h3>
+                    <div class="social-row">
+                        <a href="https://github.com/assidawib-lab">GitHub</a>
+                        <a href="https://www.linkedin.com/in/bilal-as-sidawi-06ab93392/">LinkedIn</a>
+                        <a href="https://www.youtube.com/@bilalassidawi">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> Dibuat sambil belajar, satu baris kode tiap hari.</p>
+        </div>
+    </footer>
+    
+    <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
     <br><br><br>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    
+    <script>
+    function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+    }
+    </script>
+
+    <script>
+    const texts = [
+    "Bilal Assidawi.",
+    "Web Enthusiast.",
+    "HSI Student."
+    ];
+
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let isDeleting = false;
+    const speed = 100;
+
+    function typeEffect() {
+    currentText = texts[count];
+
+    if (!isDeleting) {
+    document.getElementById("typing").innerHTML =
+      currentText.slice(0, ++index);
+    } else {
+    document.getElementById("typing").innerHTML =
+      currentText.slice(0, --index);
+    }
+
+    if (!isDeleting && index === currentText.length) {
+    setTimeout(() => isDeleting = true, 1000);
+    }
+
+    if (isDeleting && index === 0) {
+    isDeleting = false;
+    count = (count + 1) % texts.length;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : speed);
+    }
+
+    typeEffect();
+    </script>
 </body>
 </html>
